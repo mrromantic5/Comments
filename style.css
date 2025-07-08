@@ -1,0 +1,172 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+}
+
+/* Main Content Styles */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Comment Form Section */
+#comment-form-section {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#comment-form-section h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+#comment-form div {
+    margin-bottom: 15px;
+}
+
+#comment-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#comment-form input[type="text"],
+#comment-form input[type="url"],
+#comment-form textarea {
+    width: calc(100% - 22px); /* Full width minus padding and border */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* So padding doesn't add to width */
+}
+
+#comment-form textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+#comment-form button[type="submit"] {
+    background: #5cb85c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#comment-form button[type="submit"]:hover {
+    background: #4cae4c;
+}
+
+/* Comments Display Section */
+#comments-display-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#comments-display-section h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+.comment {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.comment:last-child {
+    border-bottom: none;
+}
+
+.comment-profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover; /* Ensures the image covers the area nicely */
+    border: 2px solid #ddd;
+}
+
+.comment-content {
+    flex-grow: 1;
+}
+
+.comment-author {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.comment-timestamp {
+    font-size: 0.8rem;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+.comment-message {
+    font-size: 1rem;
+    color: #444;
+    white-space: pre-wrap; /* Preserves whitespace and newlines */
+}
+
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .comment {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .comment-profile-pic {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
