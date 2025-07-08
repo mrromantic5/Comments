@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Lyfe Comments</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>TECH ♤ LYFE COMMENTS</h1>
+        <p>Leave a comment on our projects and services</p>
+    </header>
+
+    <main>
+        <section id="comment-form-section">
+            <h2>Leave a Comment</h2>
+            <form id="comment-form">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div>
+                    <label for="profile">Profile Picture URL (Optional):</label>
+                    <input type="url" id="profile" name="profile">
+                </div>
+                <button type="submit">Submit Comment</button>
+            </form>
+        </section>
+
+        <section id="comments-display-section">
+            <h2>Comments</h2>
+            <div id="comments-container">
+                <!-- Comments will be loaded here by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 TECH ♤ LYFE. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
